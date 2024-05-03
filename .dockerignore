@@ -1,0 +1,42 @@
+# Exclude Git-related files and directories
+.git/
+.gitignore
+
+# Exclude IDE-specific files and directories
+.idea/
+*.iml
+*.iws
+*.ipr
+*.classpath
+*.project
+*.settings
+
+# Exclude build-related files and directories
+/target/
+build/
+out/
+
+# Exclude other unnecessary files and directories
+*.class
+*.jar
+*.war
+*.ear
+*.zip
+*.tar.gz
+*.log
+*.tmp
+*.swp
+*.swo
+*.DS_Store
+*.localized
+*.pyc
+
+# Exclude dependency management files
+mvnw
+mvnw.cmd
+.m2/
+mvn-wrapper.properties
+
+# Exclude OS-specific files
+.DS_Store
+Thumbs.db

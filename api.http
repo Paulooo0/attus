@@ -1,0 +1,62 @@
+People
+
+###
+POST http://localhost:8080/people
+Content-Type: application/json
+
+{
+  "fullName": "Aaa Aaaa",
+  "birthDate": "2000-01-01"
+}
+
+###
+GET http://localhost:8080/people/id=1
+
+###
+PUT http://localhost:8080/people/id=1
+Content-Type: application/json
+
+{
+  "fullName": "Updated Name",
+  "birthDate": "2000-02-02"
+}
+
+###
+DELETE http://localhost:8080/people/id=1
+
+___________________________________________________________
+
+Address
+
+###
+POST http://localhost:8080/address/peopleId=1
+Content-Type: application/json
+
+{
+  "streetAddress": "Aaa Aaa",
+  "cep": 1111111,
+  "number": 1,
+  "city": "Aaa Aaa",
+  "state": "Aaa Aaa"
+}
+
+###
+GET http://localhost:8080/address/id=1
+
+###
+GET http://localhost:8080/address/all
+
+###
+PUT http://localhost:8080/address/id=1
+Content-Type: application/json
+
+{
+  "streetAddress": "Updated Street Address",
+  "cep": 2222222,
+  "number": 2,
+  "city": "Updated City",
+  "state": "Updated State"
+}
+
+###
+DELETE http://localhost:8080/address/id=1

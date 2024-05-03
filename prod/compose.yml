@@ -1,0 +1,8 @@
+include:
+  - infra.yml
+services:
+  backend:
+    image: paulooo/attus:0.0.1-SNAPSHOT
+    container_name: attus-app
+    ports:
+      - 8080:8080
